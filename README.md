@@ -1,7 +1,7 @@
 # Mooni Expense Tracking
 
 ## Setup
-After `npm install` make sure to create a `config.json` with your AWS credentials like so:
+After `npm install` make sure to create a `config.json` in the main directory with your AWS credentials like so:
 
 ```
 {
@@ -12,7 +12,7 @@ After `npm install` make sure to create a `config.json` with your AWS credential
 }
 ```
 
-Next, set up your GitHub Strategy for Authenticating User in `index.js`
+Next, set up your GitHub Strategy credentials for Authenticating User in `index.js`
 
 ```
 passport.use(new GithubStrategy({
