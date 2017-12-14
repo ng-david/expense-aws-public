@@ -78,4 +78,4 @@ These are the steps necessary to deploy this on Elastic Beanstalk
 
 4. Select all the contents of this directory and zip them up.
 
-5. It should now successfully deploy on AWS Elastic Beanstalk
+5. The zip file should now successfully deploy on AWS Elastic Beanstalk
