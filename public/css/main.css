@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+h1 {
+  font-size: 92px;
+  color: #333;
+  font-weight: bold; }
+
+h2 {
+  font-size: 48px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
+.my-form label {
+  text-transform: uppercase;
+  font-weight: bold;
+  opacity: .6; }
+
+.my-form input[type='text'] {
+  border-radius: 2px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 6px 8px;
+  border: 2px solid #e3e3e3; }
+  .my-form input[type='text']:focus, .my-form input[type='text']:active {
+    outline: none;
+    border-color: #80d600; }
+
+.my-form .btn {
+  margin-top: 10px;
+  width: 100%; }
+
+.hero {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: url("https://s3.amazonaws.com/cmsc389l-expense-aws/bg.jpg");
+  background-size: cover; }
+
+.home {
+  padding: 80px 15px; }
+
+.logout {
+  position: fixed;
+  z-index: 10;
+  right: 24px;
+  top: 10px;
+  color: #80d600;
+  font-weight: bold;
+  font-size: 32px; }
+  .logout:hover {
+    text-decoration: none;
+    color: #46b700; }
+
+.btn {
+  border-radius: 2px;
+  position: relative;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  background-color: #80d600;
+  border-bottom: 3px solid #46b700; }
+  .btn.github {
+    width: 300px; }
+  .btn:hover, .btn:active {
+    outline: none;
+    background-color: #46b700 !important;
+    border-color: #338202 !important;
+    box-shadow: none !important; }
+  .btn img {
+    position: absolute;
+    left: 15px;
+    height: 22px;
+    margin-right: 15px; }
+
+label {
+  display: block; }
+
+.expense-block {
+  margin-top: 40px; }
+  .expense-block .expense {
+    margin-top: 20px;
+    padding: 20px;
+    border-left: 2px solid #80d600; }
+    .expense-block .expense h4 {
+      font-size: 32px;
+      font-weight: bold; }
+      .expense-block .expense h4 .vendor {
+        font-size: 18px;
+        opacity: .7;
+        text-transform: uppercase;
+        font-weight: normal; }
+    .expense-block .expense .tags-block {
+      margin-bottom: 10px; }
+      .expense-block .expense .tags-block .tags {
+        background-color: #ccc;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 4px;
+        font-size: 12px;
+        color: white; }
+    .expense-block .expense h5 {
+      font-size: 16px;
+      opacity: .5; }

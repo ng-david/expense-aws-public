@@ -1,0 +1,28 @@
+<a class="logout" href="/logout">&times;</a>
+<div class="container home">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h2>+ new expense</h2>
+      <form action="add" method="post" class="my-form">
+        <label>Vendor</label>
+        <input required type="text" name="vendor" value="">
+        <br>
+        <label>Date</label>
+        <input required type="text" name="date" value="" placeholder="mm/dd/yyyy" pattern="^\d{2}\/\d{2}\/\d{4}$">
+        <br>
+        <label>Amount</label>
+        <input required type="text" name="amount" value="">
+        <br>
+        {{!-- TODO use html to force a regex on tags --}}
+        <label>Tags</label>
+        <input type="text" name="tags" value="">
+        {{!-- <br> --}}
+        {{!-- <label>Description</label> --}}
+        {{!-- <textarea name="description"></textarea> --}}
+        {{!-- <input type="text" name="description" value=""> --}}
+        <br>
+        <input type="submit" name="" class="btn btn-primary" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>

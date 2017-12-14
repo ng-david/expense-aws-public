@@ -1,0 +1,135 @@
+@import "vars.scss";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+h1 {
+  font-size: 92px;
+  color: #333;
+  font-weight: bold;
+}
+h2 {
+  font-size: 48px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+  &.total {
+    // color: $brand-color-darker;
+  }
+}
+.my-form {
+  label {
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: .6;
+  }
+  input[type='text'] {
+    border-radius: 2px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 6px 8px;
+    // transition: ease all .3s;
+    border: 2px solid #e3e3e3;
+    &:focus, &:active {
+      outline: none;
+      border-color: $brand-color;
+    }
+  }
+  .btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+.hero {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: url('https://s3.amazonaws.com/cmsc389l-expense-aws/bg.jpg');
+  background-size: cover;
+}
+.home {
+  padding: 80px 15px;
+}
+.logout {
+  position: fixed;
+  z-index: 10;
+  right: 24px;
+  top: 10px;
+  color: $brand-color;
+  font-weight: bold;
+  font-size: 32px;
+  &:hover {
+    text-decoration: none;
+    color: $brand-color-darker;
+  }
+}
+.btn {
+  border-radius: 2px;
+  position: relative;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 8px 24px;
+  // justify-content: center;
+  // align-items: center;
+  // display: flex;
+  background-color: $brand-color;
+  border-bottom: 3px solid $brand-color-darker;
+  &.github {
+    width: 300px;
+  }
+  &:hover, &:active {
+    outline: none;
+    background-color: $brand-color-darker !important;
+    border-color: $brand-color-darkest !important;
+    box-shadow: none !important;
+  }
+  img {
+    position: absolute;
+    left: 15px;
+    height: 22px;
+    margin-right: 15px;
+  }
+}
+label {
+  display: block;
+}
+.expense-block {
+  margin-top: 40px;
+  // background-color: white;
+  .expense {
+    margin-top: 20px;
+    padding: 20px;
+    border-left: 2px solid $brand-color;
+    h4 {
+      font-size: 32px;
+      font-weight: bold;
+      .vendor {
+        font-size: 18px;
+        opacity: .7;
+        text-transform: uppercase;
+        font-weight: normal;
+      }
+    }
+    .tags-block {
+      margin-bottom: 10px;
+      .tags {
+        background-color: #ccc;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 4px;
+        font-size: 12px;
+        color: white;
+      }
+    }
+    h5 {
+      font-size: 16px;
+      opacity: .5;
+    }
+  }
+}

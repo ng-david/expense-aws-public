@@ -1,0 +1,36 @@
+{{#if isAuthenticated}}
+  <a class="logout" href="/logout">&times;</a>
+  <div class="container home">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2>{{username}}'s expenses</h2>
+        <h2 class="total">${{total}}</h2>
+        <a class="btn btn-primary" href="/add">+ New Expense</a>
+        <div class="expense-block">
+          {{#each expenses}}
+          <div class="expense">
+            <h4>${{this.amount}}<span class="vendor"> @ {{this.vendor}}</span></h4>
+            <div class="tags-block">
+              <span class="tags">{{this.tags}}</span>
+            </div>
+            <h5>{{this.date}}</h5>
+
+            {{!-- <div>Description: {{this.description}}</div> --}}
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+{{else}}
+  {{!-- <h1>Muni</h1> --}}
+  <div class="hero">
+    <div class="text-center">
+      <h1>mooni</h1>
+      <a href='/auth/github' class="btn btn-primary github">
+        <img src="https://s3.amazonaws.com/cmsc389l-expense-aws/github-512.png" alt="">
+        LOGIN WITH GITHUB
+      </a>
+    </div>
+  </div>
+{{/if}}
