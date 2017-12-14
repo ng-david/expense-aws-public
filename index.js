@@ -7,7 +7,7 @@ const AWS = require('aws-sdk');
 const passport = require('passport');
 const GithubStrategy = require('passport-github').Strategy;
 const session = require('express-session');
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8000;
 // GLOBALs
 const TABLENAME = "Expenses";
 const DELETETABLEMODE = false;
@@ -72,7 +72,7 @@ app.use('/public', express.static('public'));
 passport.use(new GithubStrategy({
     clientID: "HIDDEN",
     clientSecret: "HIDDEN",
-    callbackURL: "http://localhost:3000/auth/github/callback"
+    callbackURL: "http://localhost:8000/auth/github/callback"
   },
   function(accessToken, refreshToken, profile, done) {
     return done(null, profile);
