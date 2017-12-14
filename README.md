@@ -35,6 +35,8 @@ passport.use(new GithubStrategy({
 
 `npm run watch-css` runs a sass precompiler to update `public/css/main.css` when changes are seen in `scss/main.scss`
 
+Also make sure to run DynamoDB locally using Amazon's guide: [Link](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html)
+
 ## Deploy on Elastic Beanstalk
 These are the steps necessary to deploy this on Elastic Beanstalk
 
