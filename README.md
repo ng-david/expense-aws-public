@@ -76,8 +76,21 @@ These are the steps necessary to deploy this on Elastic Beanstalk
 }
 ```
 
-3. Remove the folders `upload` and `scss`from the directory
+3. Update the passport GitHub strategy's callbackURL in `index.js` to be where your Elastic Beanstalk App's URL will be:
+```
+passport.use(new GithubStrategy({
+    clientID: "secret",
+    clientSecret: "secret",
+    callbackURL: "<UPDATE ME>"
+  },
+  function(accessToken, refreshToken, profile, done) {
+    return done(null, profile);
+  }
+));
+```
 
-4. Select all the contents of this directory and zip them up.
+4. Remove the folders `upload` and `scss`from the directory
 
-5. The zip file should now successfully deploy on AWS Elastic Beanstalk
+5. Select all the contents of this directory and zip them up.
+
+6. The zip file should now successfully deploy on AWS Elastic Beanstalk
