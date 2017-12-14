@@ -25,3 +25,11 @@ passport.use(new GithubStrategy({
   }
 ));
 ```
+
+## Running locally
+
+`npm start` runs index.js
+`npm run watch` runs development version using nodemon to update on changes in the directory
+`npm run watch-css` runs a sass precompiler to update `public/css/main.css` when changes are seen in `scss/main.scss`
+
+## Hosting on AWS
