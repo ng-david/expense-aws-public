@@ -1,6 +1,18 @@
 # Mooni Expense Tracking
 ### CMSC389L Final Project
 
+## Overview
+
+Here is a description of my project
+
+## Video Demo
+
+Here is a video of my project
+
+## Architecture Diagram
+
+Here is a diagram of my project
+
 ## Setup
 After `npm install` make sure to create a `config.json` in the main directory with your AWS credentials like so:
 
