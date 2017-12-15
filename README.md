@@ -1,5 +1,25 @@
 # Mooni Expense Tracking
-### CMSC389L Final Project
+#### CMSC389L Final Project
+
+## Overview
+
+#### Mooni is an expense tracking web application. 
+
+Users can log in (currently only with GitHub authentication) and input their expenses into a database. Users will provide the vendor name, expense date, dollar amount, and tags when submitting an expense to be saved. Expenses are recovered through sessions and viewable when logged in. 
+
+#### Future Plans to be Implemented:
+
+The goal is to implement viewing filters based on tags that each user has submitted and date ranges of expenses. This will allow easier monitoring and highlighting of each expense.
+
+#### Demo it here [Link](http://expense-aws.us-east-1.elasticbeanstalk.com/)
+
+## Video Demo
+
+Here is a video of my project
+
+## Architecture Diagram
+
+Here is a diagram of my project
 
 ## Setup
 After `npm install` make sure to create a `config.json` in the main directory with your AWS credentials like so:
