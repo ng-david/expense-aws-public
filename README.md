@@ -19,7 +19,7 @@ Here is a video of my project
 
 ## Architecture Diagram
 
-Here is a diagram of my project
+![alt text](https://raw.githubusercontent.com/ng-david/expense-aws-public/master/arch.png)
 
 ## Setup
 After `npm install` make sure to create a `config.json` in the main directory with your AWS credentials like so:
