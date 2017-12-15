@@ -15,7 +15,7 @@ The goal is to implement viewing filters based on tags that each user has submit
 
 ## Video Demo
 
-Here is a video of my project
+The video demo of Mooni can be found here [Link](https://youtu.be/iwmJYXIT5Mo)
 
 ## Architecture Diagram
 
