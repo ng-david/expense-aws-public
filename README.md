@@ -3,7 +3,13 @@
 
 ## Overview
 
-Here is a description of my project
+Mooni is an expense tracking web application. 
+
+Users can log in (currently only with GitHub authentication) and input their expenses into a database. Users will provide the vendor name, expense date, dollar amount, and tags when submitting an expense to be saved. Expenses are recovered through sessions and viewable when logged in. 
+
+#### Future Plans to be Implemented:
+
+The goal is to implement viewing filters based on tags that each user has submitted and date ranges of expenses. This will allow easier monitoring and highlighting of each expense.
 
 ## Video Demo
 
